@@ -1,6 +1,7 @@
 /* styles.css */
 body {
-    background-color: #f9f9f9;
+    background-image: url(https://media.rainpos.com/Checker/CX9453-CREM.jpg);
+    /* background-color: #f9f9f9; */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;

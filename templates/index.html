@@ -9,18 +9,14 @@
 <body>
     <div class="container">
         <h1>Tense Detector</h1>
-        <form action="/detect" method="POST">
-            <input type="text" name="sentence" placeholder="Enter a sentence..." required>
+        <form id="tenseForm">
+            <label for="sentenceInput">Enter a sentence:</label>
+            <input type="text" id="sentenceInput" name="sentence" required>
             <button type="submit">Detect Tense</button>
         </form>
-        
-        <!-- Display the result -->
-        {% if result %}
-            <div id="result">
-                <h2>Detected Tense:</h2>
-                <p>{{ result }}</p>
-            </div>
-        {% endif %}
+        <p id="result"></p>
     </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
